@@ -1,0 +1,112 @@
+
+$desktop-breakpoint: 1200px;
+$tablet-breakpoint: 768px;
+$smartphone-breakpoint: 576px;
+
+html, body 
+{ 
+ height: 100%;
+ overflow: hidden
+}
+
+html {
+  font-size: 22px; /* Define o tamanho da fonte base */
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow: hidden;
+}
+
+.card-main{}
+
+.button {
+  border: none;
+  padding: 0;
+  background: none; 
+  cursor: pointer;
+}
+
+.button img {
+  max-width: 100%; 
+  height: 100%;    
+}
+
+.center-button {
+  margin-left: 30%;
+  margin-top: 10%;
+  width: 30%;
+  height: 30%;
+}
+.up-button {
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 20%;
+  height: 20%;
+}
+
+.down-button {
+  margin-left: 35%;
+  width: 20%;
+  height: 20%;
+}
+
+.right-button{
+  position: absolute;
+  left: 50%;
+  margin-top: 23%;
+  width: 20%;
+  height: 20%;
+  @media (max-width: $tablet-breakpoint) {
+    height: 10%;
+  }
+  z-index: 1;
+}
+
+.left-button{
+  position: absolute;
+  left: 20%;
+  margin-top: 23%;
+  width: 20%;
+  height: 20%;
+  @media (max-width: $tablet-breakpoint) {
+    height: 10%;
+  }
+}
+audio {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  visibility: hidden;
+}
+
+.button-jogar{
+  position: absolute;
+  margin-top: 50%;
+  margin-left: 45%; 
+  @media (max-width: $tablet-breakpoint) {
+    margin-top: 90%;
+    margin-left: 40%; 
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

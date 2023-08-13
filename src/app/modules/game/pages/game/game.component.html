@@ -1,0 +1,25 @@
+<app-background></app-background>
+<audio id="myAudio">
+    <source src="/assets/Sounds/button.wav" type="audio/mpeg">
+  </audio>
+<button class="button center-button" (click)="toggleIcon()" type="button">
+    <img [src]="iconUrl" alt="Icon">
+</button>
+
+<button class="button up-button" (click)="toggleIconUp()" type="button">
+    <img [src]="iconUrlUp" alt="Icon">
+</button>
+
+<button class="button right-button" (click)="toggleIconRight()" type="button">
+    <img [src]="iconUrlRight" alt="Icon">
+</button>
+
+<button class="button left-button" (click)="toggleIconLeft()" type="button">
+    <img [src]="iconUrlLeft" alt="Icon">
+</button>
+
+<button class="button down-button" (click)="toggleIconDown()" type="button">
+    <img [src]="iconUrlDown" alt="Icon">
+</button>
+
+

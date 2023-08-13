@@ -1,0 +1,14 @@
+<div class="container-main" #containerMain>
+  <div *ngIf="loading && !startGame">
+    <app-loading></app-loading>
+  </div>
+  <div class="button-jogar" *ngIf="!loading && !startGame">
+    <button pButton pRipple label="Jogar" class="p-button-success" (click)="playAudio()"></button>
+  </div>
+  <div *ngIf="!loading && startGame">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<audio controls loop id="audioPlayer">
+  <source src="/assets/Sounds/music.mp3" type="audio/mpeg">
+</audio>
