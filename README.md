@@ -13,3 +13,4 @@ Para começar a trabalhar no projeto, siga os passos abaixo:
 
    ```bash
    npm install
+   npm start
